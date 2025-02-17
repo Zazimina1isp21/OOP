@@ -125,8 +125,8 @@ class Studio:
     session_count = 0  # действительные сессии
 
     def __init__(self, photographers):
-        # Используем словарь (словарь) для более быстрого поиска фотографов по id
-        self.photographers = {p.id: p for p in photographers}  # Преобразование списка в словарь: {photographer_id: Photographer object}
+      
+        self.photographers = {p.id: p for p in photographers}  #из списка в словарь
         self.clients = {}
         self.sessions = {}
 
